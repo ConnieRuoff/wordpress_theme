@@ -1,8 +1,29 @@
+<?php get_header(); ?>
+
 <section id="container"> <!-- holds the content and sidebar panes -->
+
         <section id=""content"> <!-- The main information panel for our theme -->
-            <h2 class="wp-title">Welcome to your first Theme!</h2>
-            <p>We will replace this content once we are connected to the visual editor.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero similique iure temporibus quaerat quibusdam quam doloribus maiores aspernatur? Recusandae, praesentium. Nesciunt, alias provident similique magni accusantium officiis deleniti ratione nam?</p>
-            
-        </section> <!-- closes content -->
+
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <section <?php post_class(); ?> id="post-<?php the_ID(); ?>"> 
+
+                <h2 class="wp-title"><a href="<?php the_permalink(); ?>"> <?php the_title();?> </a> </h2>
+                
+                    <?php the_content(); ?>
+
+                <?php endwhile; ?>
+
+                <?php endif; ?>
+        
+            </section> <!-- closes content -->
+
+           
+
+        <!-- Placeholder for sidebar -->
+        <section id="sidebar">
+            <!-- Content of sidebar -->
+            <p> the sidebar is working </p>
+
+         <?php get_footer(); ?>  
+        </section> 
     </section> <!-- closes sectiion-->
