@@ -11,12 +11,19 @@
                 
                     <?php the_content(); ?>
 
+                 </section> <!-- closes content -->
+
                 <?php endwhile; ?>
+
+                <section class="post-nav">
+
+                     <p><?php previous_post_link( "%link", "Previous Post" ); ?></p>
+                     <p><?php next_post_link( "%link", "Next Post" ) ?></p>
 
                 <?php endif; ?>
         
-            </section> <!-- closes content -->
-
+           
+""
            
 
         <!-- Placeholder for sidebar -->
