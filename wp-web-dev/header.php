@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
 
-        <title <?php the_title(); ?> - <?php bloginfo( 'name' );></title>
+       <title <?php the_title(); ?> - <?php bloginfo( 'name' ); ?>></title>
 
         <?php wp_head(); ?>
 
@@ -15,8 +15,7 @@
             <div id="wrapper"> <!-- holds the whole website -->
                 <header>
 
-                    <h1> <a href =""></a> </h1>
-
+                    <h1> <a href ="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a> </h1>
 
                 </header>
                 <nav>
