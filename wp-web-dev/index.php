@@ -33,15 +33,14 @@
 
                 <?php endif; ?>
 
-        </section>        
         
-
            
 
         <!-- Placeholder for sidebar -->
         <section id="sidebar">
             <!-- Content of sidebar -->
             <p> the sidebar is working </p>
+        </section>
 
          <?php get_footer(); ?>  
        
