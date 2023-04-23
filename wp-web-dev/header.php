@@ -15,7 +15,9 @@
             <div id="wrapper"> <!-- holds the whole website -->
                 <header>
 
-                    <h1> <a href ="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a> </h1>
+                    <h1 id ="wp-name"> <a href ="<?php bloginfo( 'url' ); ?>"><?php bloginfo( 'name' ); ?></a> </h1>
+
+                    <h3 id ="site-description"><?php bloginfo( 'description' ); ?></h3>
 
                 </header>
                 <nav>
