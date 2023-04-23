@@ -9,6 +9,7 @@
 
                 <h2 class="wp-title"><a href="<?php the_permalink(); ?>"> <?php the_title(); ?> </a> </h2>
                 
+                <h3>This template is <?php global $template; echo basename( $template ) ?></h3>
                     <?php the_content(); ?>
 
                  </section> <!-- closes content -->
