@@ -1,3 +1,16 @@
+<!--*/
+
+The template for displaying pages
+
+This is the template that displays all pages by default
+Please note that this is the wordpress construct for pages anthat other "pages" on your Wordpress site will use a different template
+
+@packige Wordpress
+@subpackage Wordpress_For_Web_Development
+@since Wordpress Wordpress_For_Web_Development 0.1
+
+*/ -->
+
 <?php get_header(); ?>
 
 <section id="container"> <!-- holds the content and sidebar panes -->
@@ -16,12 +29,6 @@
 
                 <?php endwhile; ?>
 
-                <section class="post-nav"><!--Opening line for post-navigation -->
-
-                     <p><?php previous_post_link( "%link", "Previous Post" ); ?></p>
-                     <p><?php next_post_link( "%link", "Next Post" ); ?></p>
-
-                </section> 
 
                 <?php else : ?>
 
